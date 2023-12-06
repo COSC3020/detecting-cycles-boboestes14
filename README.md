@@ -15,3 +15,7 @@ exercises.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+## Runtime Analysis
+
+The worst-case big $\Theta$ complexity for my implementation would be $v^5+e^2v^3$.First, we run through all the nodes and vertices to find any negative edges which takes $ve$ time. Next, we use Dijkstra's algorithm which has a big $\Theta$ complexity of $v^3+ev^2$. After this, we then check to see if when we get back to our original node it is negative which takes n time to find and check it. After all this is done we then just need to combine it to get the worst-case big $\Theta$ complexity of $v^5+e^2v^3$.
